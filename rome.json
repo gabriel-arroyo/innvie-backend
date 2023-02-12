@@ -1,0 +1,44 @@
+{
+	"$schema": "./node_modules/rome/configuration_schema.json",
+	"linter": {
+		"enabled": true,
+		"rules": {
+			"suspicious": {
+				"noCommentText": "warn"
+			},
+			"nursery": {
+				"useConst": "warn",
+				"useCamelCase": "warn",
+				"noVar": "warn",
+				"noBannedTypes": "warn",
+				"noConstEnum": "error",
+				"noDuplicateObjectKeys": "error"
+			},
+			"correctness": {
+				"noUnusedVariables": "warn"
+			},
+			"style": {
+				"noUnusedTemplateLiteral": "off",
+				"useBlockStatements": "error",
+				"useShorthandArrayType": "error",
+				"noShoutyConstants": "warn",
+				"noNegationElse": "warn"
+			}
+		}
+	},
+	"formatter": {
+		"ignore": ["./build"],
+		"enabled": true,
+		"formatWithErrors": true,
+		"indentStyle": "space",
+		"indentSize": 2,
+		"lineWidth": 80
+	},
+	"javascript": {
+		"formatter": {
+			"semicolons": "asNeeded",
+			"trailingComma": "all",
+			"quoteStyle": "single"
+		}
+	}
+}
