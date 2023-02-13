@@ -8,7 +8,6 @@ const app = express()
 app.use(express.json())
 
 app.get('/', (req, res) => {
-  // This line is not working
   if (!req) {
     return
   }

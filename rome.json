@@ -4,7 +4,8 @@
 		"enabled": true,
 		"rules": {
 			"suspicious": {
-				"noCommentText": "warn"
+				"noCommentText": "warn",
+				"noExplicitAny": "warn"
 			},
 			"nursery": {
 				"useConst": "warn",
